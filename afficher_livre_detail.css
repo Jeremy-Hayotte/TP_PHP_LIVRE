@@ -1,30 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+}
 
 .container {
-    font-family: 'Montserrat', sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
 }
 
-.container h2 {
-    font-size: 24px;
-    margin: 10px 0;
-    color: #333;
+.book-details {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    overflow: hidden;
 }
 
-.livre-image {
-    max-width: 100%;
+.book-image {
+    width: 400px;
     height: auto;
-    margin-bottom: 20px;
 }
 
 .book-info {
+    padding: 20px;
+}
+
+.book-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.book-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.not-found {
     font-size: 18px;
-    text-align: left;
-} 
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #f44336;
+}
