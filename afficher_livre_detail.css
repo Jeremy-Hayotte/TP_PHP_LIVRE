@@ -7,10 +7,10 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
 }
 
-.container {
+/* .container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -54,4 +54,33 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #f44336;
-}
+} */
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 4 / 6;
+        background-color: red;
+     }
+
+     .div1 img {
+        width: 300px;
+        height: auto;
+     }
+
+    .div2 { 
+        grid-area: 4 / 1 / 6 / 4;
+        background-color: yellow;
+     }
+
+    .div3 { 
+        grid-area: 4 / 4 / 6 / 6;
+        background-color: blue;
+     }
